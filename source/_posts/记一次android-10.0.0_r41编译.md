@@ -17,7 +17,7 @@ tags:
 + [AOSP](https://source.android.google.cn/?hl=zh-cn)
 + [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
 + [【阳光沙滩】Android Open Source Project入门课程](https://www.bilibili.com/video/BV1y84y1k7be)
-+ [【AOSP】手把手教你编译和调试AOSP源码](https://blog.csdn.net/amosstan/article/details/122077634)
++ [【AOSP】手把手教你编译和调试AOSP源码](https://blog.csdn.net/qq_34330286/article/details/137440618)
 + [Android10.0编译 make api-stubs-docs-update-current-api问题](https://blog.csdn.net/amosstan/article/details/122077634)
 
 #### 1.安装必需的软件包 [AOSP 9.0 或更高版本](https://source.android.google.cn/docs/setup/start/requirements?hl=zh-cn)
@@ -167,13 +167,20 @@ To make these errors go away, you have two choices:
 ******************************
 ```
 
-#### 1.处理方式：降低编译线程，参考[Android10.0编译 make api-stubs-docs-update-current-api问题](https://blog.csdn.net/amosstan/article/details/122077634)
+#### 1.处理方式：降低编译线程，调整交换分区，参考[Android10.0编译 make api-stubs-docs-update-current-api问题](https://blog.csdn.net/amosstan/article/details/122077634)
 
 ```sh
 make -j12
 ```
 
-#### 2.emulator打开失败
+#### 2. print "'%s' cannot be converted to int" % (line[2])
+> File "device/generic/goldfish/tools/mk_combined_img.py", line 48
+    print "'%s' cannot be converted to int" % (line[2])
+```sh
+# python 版本不对
+sudo apt install python
+```
+#### 3.emulator打开失败
 
 ```text
 emulator 
@@ -230,4 +237,4 @@ Available platform plugins are: xcb.
 已放弃 (核心已转储)
 ```
 
-#### 2.处理方式：打开虚拟机终端执行，以上是在ssh工具执行导致
+#### 3.处理方式：打开虚拟机终端执行，以上是在ssh工具执行导致
