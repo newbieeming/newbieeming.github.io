@@ -64,7 +64,6 @@ M2_HOME=/Users/xm/Library/env/apache-maven-3.9.9
 JADX_HOME=/Users/xm/Library/env/jadx-1.4.7
 # classpath
 CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
-TXZ_GIT_ROOT=/Users/xm/.txz/TXZ_GIT_ROOT
 # echo $PATH 如果重复，重启终端
 PATH=$PATH:$JAVA_HOME/bin:$SDK_HOME/platform-tools:$SDK_HOME/build-tools/35.0.0:$GIT_HOME/bin:$M2_HOME/bin:$JADX_HOME/bin:$SCRIPT_HOME:$TXZ_GIT_ROOT
 # python3 alias
@@ -74,7 +73,6 @@ export JAVA_HOME
 export PATH
 export CLASSPATH
 export M2_HOME
-export TXZ_GIT_ROOT
 # fnm环境配置
 eval "$(fnm env --use-on-cd)"
 # fnm 阿里镜像
