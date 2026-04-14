@@ -1,6 +1,7 @@
 ---
 title: AudioRecord 学习
 date: 2023-06-23 16:38
+index_img: https://cdn.jsdelivr.net/gh/xmbest/image/img/202407211716600.png
 categories:
   - Android
 tags:
